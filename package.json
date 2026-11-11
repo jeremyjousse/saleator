@@ -1,0 +1,39 @@
+{
+  "name": "saleator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "zip": "wxt zip",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "lint": "oxlint src entrypoints tests",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-svelte": "^1.0.1",
+    "svelte": "^5.57.3",
+    "tailwind-merge": "^3.5.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/chrome": "^0.3.7",
+    "@types/node": "^22.14.0",
+    "@wxt-dev/module-svelte": "^2.0.5",
+    "happy-dom": "^21.0.4",
+    "oxlint": "^1.93.0",
+    "prettier": "^3.10.0",
+    "prettier-plugin-svelte": "^4.1.1",
+    "svelte-check": "^4.7.8",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.0",
+    "vitest": "^3.1.1",
+    "wxt": "^0.21.5"
+  }
+}
