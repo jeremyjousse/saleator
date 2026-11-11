@@ -1,0 +1,23 @@
+[tasks.check]
+description = "Typecheck and validate Svelte components"
+run = "pnpm svelte-check --tsconfig ./tsconfig.json"
+
+[tasks.lint]
+description = "Lint Svelte and TypeScript code"
+run = "pnpm oxlint src entrypoints tests"
+
+[tasks."format:check"]
+description = "Check code formatting"
+run = "pnpm prettier --check ."
+
+[tasks.format]
+description = "Format code"
+run = "pnpm prettier --write ."
+
+[tasks.test]
+description = "Run unit and component tests"
+run = "pnpm vitest run"
+
+[tasks.verify]
+description = "Run all verification checks (check, lint, format:check, test)"
+depends = ["check", "lint", "format:check", "test"]
